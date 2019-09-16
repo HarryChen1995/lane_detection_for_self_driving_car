@@ -16,7 +16,7 @@ import cv2
 
 
 
-video = cv2.VideoCapture("cam3.mp4")
+video = cv2.VideoCapture("src/cam3.mp4")
 width=video.get(cv2.CAP_PROP_FRAME_WIDTH)
 height=video.get(cv2.CAP_PROP_FRAME_HEIGHT)
 def ROI(image):
@@ -79,7 +79,7 @@ def load_image_into_numpy_array(image):
 
 frame_width = int(video.get(3))
 frame_height = int(video.get(4))
-out = cv2.VideoWriter('output.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width,frame_height))
+out = cv2.VideoWriter('output.mp4',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width,frame_height))
 with detection_graph.as_default():
   with tf.Session(graph=detection_graph) as sess:
     while True:
