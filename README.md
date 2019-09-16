@@ -1,6 +1,6 @@
 # Lane Detection for Self Driving Car 
 
-This project was created to perform lane detection and recognize driving-by vehicles to assist autonomous driving car on high way using pretrained tensorflow model and OpenCV.
+This project was created to perform lane detection and recognize driving-by vehicles to assist autonomous driving car on high way using pretrained ssd_inception_v2 model and OpenCV.
 
 ## Input Video from Dash Camera
 ![altext](src/input.gif)
